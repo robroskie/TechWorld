@@ -2,7 +2,7 @@
 - Jacob Harding
 - Luke Roblesky
 
-# Project description:
+# Project description and details:
 The goal for our project is to make a forum website where registered users can create message threads on tech related topics and reply to other users on different threads.
 
 ## **General Site Features**
