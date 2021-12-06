@@ -1,5 +1,25 @@
 <?php
     session_start();
+
+    include_once("dbUtil.php");
+    $connection = createDBConnection();
+
+    if (!isset($_SESSION['user_logged_in'])) {
+        header("Location: index.php");
+        return;
+    }
+
+    $sql = 'SELECT * FROM WebsiteUsers WHERE admin = 1 AND username = ?';
+    $stmt = $connection->prepare($sql); 
+    $stmt->bind_param("s", $_SESSION['user_logged_in']);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $number_of_results = $result->num_rows;
+    
+    if ($number_of_results < 1) {
+        header("Location: index.php");
+        return;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
