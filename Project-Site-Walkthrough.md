@@ -1,5 +1,5 @@
 
-## Introduction
+## Project Site Walkthrough
 ###  Upon first loading the website the user will be taken to the index.php page. The idea behind our website is that it is a forum where users can ask and answer questions about topics relating to technology.
 
 <p>At the top and bottom of the document respectively there is a Bootstrap header and footer. The left side of the header contains a Home button, which takes the user back to the index.php page, and an All Topics dropdown button to filter the threads by a selected topic. If the website user is logged in, the right side of the header will display a create a thread, user avatar, user name and logout buttons. However if the user is not logged in, the right side of the header presents login and signup buttons.</p>
