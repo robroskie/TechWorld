@@ -4,7 +4,7 @@
 
 #### At the top and bottom of the document respectively there is a Bootstrap header and footer. The left side of the header contains a Home button, which takes the user back to the index.php page, and an All Topics dropdown button to filter the threads by a selected topic. If the website user is logged in, the right side of the header will display a create a thread, user avatar, user name and logout buttons. However if the user is not logged in, the right side of the header presents login and signup buttons. 
 
-### The left side of the document body contains, according to the selected search criteria, the 5 top thread titles along with a preview of each question. Threads can be searched for by typing in words or phrases contained in the thread titles and clicking the magnifying glass or hitting enter. 
+#### The left side of the document body contains, according to the selected search criteria, the 5 top thread titles along with a preview of each question. Threads can be searched for by typing in words or phrases contained in the thread titles and clicking the magnifying glass or hitting enter. 
 
 https://user-images.githubusercontent.com/28748883/144934808-052db74f-5bc9-4704-95f7-a8d7e63004d7.mov
 
