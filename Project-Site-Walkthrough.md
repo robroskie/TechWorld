@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/28748883/144934808-052db74f-5bc9-4704-
 
 https://user-images.githubusercontent.com/28748883/144931325-d37ddf7e-7223-49d6-8a99-b3bde9a17d4d.mov
 
-<p>If the user is logged in, then an option will be a textbox displayed at the bottom of the thread comments where a reply can be written and submitted.</p>
+<p>If the user is logged in, then an option will be a textbox displayed at the bottom of the thread comments where a reply can be written and submitted. A logged in user can create new threads by clicking the Create a Thread+ button at the top of the page, and entering the topic and body.</p>
 
 https://user-images.githubusercontent.com/28748883/144937649-26517704-a0a0-4283-9cd9-5c4ed75605ed.mov
 
