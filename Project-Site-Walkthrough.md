@@ -11,3 +11,6 @@ This document will be used as a guide to test what you did. This document should
 
 # Introduction
 ## Upon first loading the website the user will be taken to the index.php page. 
+
+https://user-images.githubusercontent.com/28748883/144931325-d37ddf7e-7223-49d6-8a99-b3bde9a17d4d.mov
+
