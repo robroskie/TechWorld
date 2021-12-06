@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Forum&family=Sora&display=swap');
+
+* {
+    font-family: 'Barlow';
+}
+
+/*
+    Header
+*/
+#header {
+    width: 100%;
+}
+
+    #login_btn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: none;
+    }
+
+    #signup_btn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: none;
+    }
+
+    #website_title_container {
+        display: flex;
+        height: 100%;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header_nav_link {
+        color: #fff;
+    }
+
+    .header_nav_link:hover {
+        color: #fff;
+    }
+
+    #login_and_signup_spacer {
+        color: #fff;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    #create_a_thread_link {
+        margin-right: 1em;
+        border-style: solid;
+        border-color: #fff;
+        border-width: 1px;
+        padding: 0.5em;
+        border-radius: 1.0em;
+        color: #fff;
+    }
+
+    #create_a_thread_link:hover {
+        background-color: #fff;
+        color: #343a40;
+    }

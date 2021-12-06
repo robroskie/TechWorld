@@ -1,0 +1,49 @@
+
+/* Potential color palettes */
+/* https://mycolor.space/?hex=%23EAE7DC&sub=1 */
+/* https://coolors.co/palettes/trending  */
+
+body{
+    background: hsla(0, 0%, 100%, 1) !important;
+
+    background: #005AA7 !important;  
+    background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7) !important; 
+    background: linear-gradient(to right, #FFFDE4, #005AA7) !important; 
+}
+
+/* Left column - individual post background colors */
+.post_card {
+    background-color: #FFF5F2;
+}
+
+/* Left column - selected post container color */
+.post_card_selected {
+    background-color: #a6a6a6;
+}
+/* Left column - all title text color */
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+/* Right column - Main post */
+.post_selected {
+    background-color: #FFF5F2;
+}
+
+/* Left column - individual post background colors */
+.post_reply {
+    background-color: #FFF5F2;
+}
+
+/* Both Columns - outline background colors */
+.fcol {
+    background-color: #d8e2dc;
+}
+
+
+/* Hover element color */
+.hover-element{
+    background-color: #FFFF66 !important;
+}
+

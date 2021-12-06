@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Forum&family=Sora&display=swap');
+
+body {
+    margin: 0em;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #FFFDE4, #005AA7) !important; 
+}
+
+.fcol {
+    background-color: #d8e2dc;
+}
+
+
+#signup_container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #d8e2dc;
+    width: 25%;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Barlow';
+    border: 1px solid #caffbf;
+}
+    #signup_form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+        .signup_label {
+            font-size: 1.2em;
+            text-align: left;
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        .signup_text {
+            font-size: 1.2em;
+            padding: 1em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .signup_text:focus {
+            background-color: #b9e0e6;
+        }
+
+        .signup_error_message_active {
+            margin-top: 1em;
+            padding: 1em;
+            background-color: #f56363;
+        }
+
+        .signup_btn {
+            border-style: none;
+            padding: 1em;
+            font-size: 1.2em;
+            margin-top: 1em;
+            background-color: #17a2b8;
+            color: #fff;
+            border-radius: 0.2em;
+        }
+
+        #login_btn:hover {
+            cursor: pointer;
+        }
+
+        #user_profile_input {
+            width: 100%;
+        }
+

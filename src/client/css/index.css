@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Forum&family=Sora&display=swap');
+
+* {
+    font-size: 100%;
+    font-family: 'Barlow', sans-serif;
+    /* font-family: 'Forum', cursive; */
+    /* font-family: 'Sora', sans-serif; */
+}
+
+/*
+    General
+*/
+body {
+    margin: 0em;
+}
+
+.width-zero {
+    width: 0em;
+}
+
+.p1 {
+    padding: 1em;
+}
+
+.fs1 .fs2 {
+    font-size: 1.2em;
+}
+
+
+.footer-li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.response-snip{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+/*
+    Topic List
+*/
+#topic_container {
+    display: flex;
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 1em;
+}
+
+    .topic_btn:hover {
+        cursor: pointer;
+        background-color: rgb(56, 56, 136);
+    }
+
+    .topic_btn_selected {
+        background-color: rgb(209, 23, 79);
+    }
+
+/* 
+    Two Columns
+*/
+#column_container {
+    display: flex;
+    width: 90%;
+    margin: 2.25em auto;
+    overflow:hidden;
+}
+
+/* Top and right lines separating posts */
+.post_card, .post_reply, .post_selected{
+    outline: 0.1em solid gray;
+}
+
+.post_card:hover {
+    cursor: pointer;
+}
+
+/* Add radius to both columns */
+.bc1, .bc2{
+    border-radius: 10px;
+    border: 1px solid #caffbf;
+}
+
+
+    /*
+        Left Column (Posts Listing for Current Topic)
+    */
+
+    #posts_by_topic_container{
+        height: max-content;
+    }
+
+    #thread_search_bar {
+        flex-grow: 1;
+        border-width: 2px;
+        border-color: rgb(118,118,118);
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+    }
+
+    #thread_search_icon {
+        width: 2.5em;
+        min-width: 2.5em;
+        background-color: #343a40;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        color: #fff;
+        border-radius: 2px;
+        pointer-events: all;
+    }
+
+    .bc1 {
+     
+        flex-basis: 30%;
+        padding: 0.5em;
+        flex-grow: 0.4;
+        display: flex;
+        width: 0em;
+        flex-direction: column;
+
+
+
+    }
+
+    .bc2 {
+        flex-basis: 70%;
+        padding: 0.5em;
+        flex-grow: 0.4;
+        display: flex;
+        width: 0em;
+        flex-direction: column;
+    }
+
+        #sort_options_container {
+            margin-bottom: 1em;
+            display: flex;
+        }
+
+        .post_card {
+            padding: 1em;
+            color: #212529;
+        }
+
+            .post_card_title {
+                width: 100%;
+                font-size: 1.2em;
+            }
+
+            .post_card_description {
+                width: 100%;
+            }
+
+
+        
+        .post_card_line {
+            width: 100%;
+            height: 0.1em;
+        }
+
+    /*
+        Right Column (Current Selected Thread)
+    */
+    #post_container {
+        display: flex;
+        width: 100%;
+
+        margin-left: 2em;
+        padding: 0.5em;
+        flex-grow: 0.6;
+        flex-direction: column;
+        width: 0em;
+        max-height: initial;
+        height: max-content;
+    }
+
+            #thread_container {
+                margin-bottom: 1em;
+            }
+
+            .post_title {
+                margin-top: 0em;
+            }
+
+
+            .reply_and_date_container {
+                display: flex;
+            }
+
+            .reply_btn {
+                flex-grow: 0.5;
+            }
+
+            .reply_btn:hover {
+                cursor: pointer;
+            }
+
+            .date {
+                width: 100%;
+                /*flex-grow: 0.5;*/
+                text-align: right;
+            }
+
+
+        
+
+        #reply_container {
+            margin-top: 1em;
+        }
+
+            #reply_text_area {
+                width: 100%;
+                outline: none;
+                background-color: #FFF5F2;
+            }
+
+            #submit_comment {
+                border-width: 0em;
+                color: rgb(238, 238, 238);
+                padding: 1em;
+                border-radius: 0.2em;
+            }
+
+/* Buttons */
+.page-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.page-button {
+    background-color: #fff;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    font-size: 2em;
+    padding: 0em;
+    border: none;
+    display: flex;
+    border: 2px solid #0049b6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    outline: none;
+}
+
+.page-button:focus {
+    outline: none;   
+}
+
+.page-button:hover {
+    background-color: #0049b6;
+    color: #fff;
+}
+
+.page-button span {
+    position: relative;
+    top: -0.1em;
+    display: block;
+    font-size: 1.5em;
+    height: max-content;
+    text-align: center;
+}
+
+#current_page {
+    display: inline;
+    text-align: center;
+}
+
+/*
+.btn-prev, .btn-next  {
+    display: inline-block;
+    background-color: #FFFDE4;
+    border-radius: 50%;
+
+    padding: 10px 20px;
+    margin-top: 5px;
+  }
+  
+.btn-prev {
+    background-color: #FFFDE4;
+    color: #005AA7;
+}
+
+.btn-next{
+    background-color: #005AA7;
+    color: white;
+}
+*/
+
+#search_container{
+    padding-bottom: 1em;
+    display: flex;
+}
+
+.topic-search{
+    width: 90%;
+}
+
+
+/* Images */
+.search-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 90%;
+}
+
+/* Bootstrap */
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background:#222;
+    color: #f2f2f2;
+}
+
+#sort_by_search_option_btn_group {
+    width: 100%;
+}
+
+#sort_by_search_option_btn {
+    width: 100%;
+}
+
+.title{
+    font-size: 150%;
+}
+
+.nav-footer{
+    padding: 0 0.1em 0 0.1em !important;
+}
+
+
+
+.nav-image{
+    width: 50px;
+}
+
+.page-footer{
+    background-color: #343a40 !important;
+    color: #343a40 !important;
+}
+
+
+.page-footer { /* footer trick learned from https://codepen.io/cbracco/pen/zekgx */
+    margin: 0;
+    }
+
+.about, .contact{
+    color: #fff;
+}
+

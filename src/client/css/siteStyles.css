@@ -1,0 +1,40 @@
+
+.text_input_padding {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+.btn_padding {
+    padding: 1em;
+}
+
+.select_option_btn {
+    border-style: solid;
+    border-radius: 4px;
+    background-color: #0049b6;
+    border-color: #0049b6;
+    color: #fff;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+.display_none {
+    display: none;
+}
+
+.error {
+    background-color: #f56363 !important;
+}
+
+.centered_panel {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 2em;
+    border-radius: 10px;
+    background-color: #d8e2dc;
+    border: 1px solid #caffbf;
+}
