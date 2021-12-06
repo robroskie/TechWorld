@@ -5,23 +5,11 @@
         return;
     }
 
+    include_once("dbUtil.php");
+    // create connection
+
     function getNumberOfThreadsCreatedByUser($username) {
-        // Login credentials for database
-        $db_host = "127.0.0.1";
-        $db_user = "root";
-        $db_password = "";
-        $database = "forum_website";
-
-        error_reporting(0); // so if new mysqli(...) fails, an error won't be echoed to the client
-
-        // create connection
-        $connection = new mysqli($db_host, $db_user, $db_password, $database);
-
-        // If failed to make a connection to the database
-        if ($connection->connect_error) {
-            echo '{"status": "Failed to make connection to database"}';
-            return;
-        }
+        $connection = createDBConnection();
 
         $sql = "SELECT * FROM Threads WHERE creatorUserName = ?";
         $prepared_statement = $connection->stmt_init();
@@ -36,22 +24,7 @@
     }
 
     function getNumberOfCommentsCreatedByUser($username) {
-        // Login credentials for database
-        $db_host = "127.0.0.1";
-        $db_user = "root";
-        $db_password = "";
-        $database = "forum_website";
-
-        error_reporting(0); // so if new mysqli(...) fails, an error won't be echoed to the client
-
-        // create connection
-        $connection = new mysqli($db_host, $db_user, $db_password, $database);
-
-        // If failed to make a connection to the database
-        if ($connection->connect_error) {
-            echo '{"status": "Failed to make connection to database"}';
-            return;
-        }
+        $connection = createDBConnection();
 
         $sql = "SELECT * FROM ThreadComments WHERE creatorUserName = ?";
         $prepared_statement = $connection->stmt_init();
@@ -124,22 +97,7 @@
 
                 <!-- Get user's email -->
                 <?php
-                    // Login credentials for database
-                    $db_host = "127.0.0.1";
-                    $db_user = "root";
-                    $db_password = "";
-                    $database = "forum_website";
-
-                    error_reporting(0); // so if new mysqli(...) fails, an error won't be echoed to the client
-
-                    // create connection
-                    $connection = new mysqli($db_host, $db_user, $db_password, $database);
-
-                    // If failed to make a connection to the database
-                    if ($connection->connect_error) {
-                        echo '{"status": "Failed to make connection to database"}';
-                        return;
-                    }
+                    $connection = createDBConnection();
 
                     $sql = "SELECT * FROM WebsiteUsers WHERE username = ?";
                     $prepared_statement = $connection->stmt_init();

@@ -31,7 +31,7 @@ $("#submit_comment").on("click", function() {
                     var userImage;
                     if (dataParsed.user_image_content_type == "" || dataParsed.user_image_data == "") {
                         console.log("no data");
-                        userImage = $("<img>").attr("src", "../img/no_user_img.png").css("width", "2em").css("border-radius", "1em");
+                        userImage = $("<img>").attr("src", "../client/img/no_user_img.png").css("width", "2em").css("border-radius", "1em");
                     } else {
                         userImage = $("<img>").attr("src", 'data:' + dataParsed.user_image_content_type + ';base64,' + dataParsed.user_image_data).css("width", "2em").css("border-radius", "1em");
                     }

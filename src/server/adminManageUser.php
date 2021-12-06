@@ -80,16 +80,9 @@
         </div>
 <?php
 
-    // Login credentials for database
-    $db_host = "127.0.0.1";
-    $db_user = "root";
-    $db_password = "";
-    $database = "forum_website";
-
-    // error_reporting(0); // so if new mysqli(...) fails, an error won't be echoed to the client
-
+    include_once("dbUtil.php");
     // create connection
-    $connection = new mysqli($db_host, $db_user, $db_password, $database);
+    $connection = createDBConnection();
 
     // If failed to make a connection to the database
     if ($connection->connect_error) {

@@ -58,6 +58,6 @@
         <a href="index.php">Click here to go back to the home page.</a>
     </div>
 
-    <script src="changePassword.js"></script>
+    <script src="../client/js/changePassword.js"></script>
 </body>
 </html>
