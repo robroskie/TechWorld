@@ -6,6 +6,12 @@ $("#cancel_changes").css("display", "none");
 $("#save_changes").css("display", "none");
 $("#user_info_change_error_message").css("display", "none");
 
+// Updated
+$("#admin_manage_btn").on("click", function() {
+    document.location.href = 'admin.php';
+});
+// Updated
+
 $("#edit_details_btn").on("click", function() {
     console.log("click");
     $("#username").removeAttr("readonly");

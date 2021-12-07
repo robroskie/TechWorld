@@ -128,6 +128,18 @@
                     </div>
                </div>
             
+                <!-- Updated -->
+                <div style="<?php echo $admin_display; ?>"?>
+                    <div id="admin_manage_btn" class="btn btn-dark">Admin Manage</div>
+               </div>
+
+               <div style="display: flex; margin-top: 1em;">
+                    <button id="edit_details_btn" class="btn btn-dark">Edit details</button>
+                    <button id="cancel_changes" class="btn btn-danger" style="display: none;">Cancel</button>
+                    <button id="save_changes" class="btn btn-success" style="margin-left: 1em; max-width: 15em;" style="display: none;">Save Changes</button>
+               </div>
+                 <!-- Updated -->
+
                <div style="display: flex; margin-top: 1em;">
                     <button id="edit_details_btn" class="btn btn-dark">Edit details</button>
                     <button id="cancel_changes" class="btn btn-danger" style="display: none;">Cancel</button>
