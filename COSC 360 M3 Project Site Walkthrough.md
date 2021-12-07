@@ -1,8 +1,11 @@
 
 ## Project Site Walkthrough
-####User login credentials
+
+<hr style="border:2px solid gray"> </hr>
+#### User login credentials
 <p>Normal User - username: Firestone, password: 123</p>
 <p>Admin - username: admin1, password: admin1</p>
+<hr style="border:2px solid gray"> </hr>
 
 ###  Upon first loading the website the user will be taken to the index.php page. The idea behind our website is that it is a forum where users can ask and answer questions about topics relating to technology.
 
