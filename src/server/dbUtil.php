@@ -1,10 +1,10 @@
 <?php
     function createDBConnection() {
         // Login credentials for database
-        $db_host = "localhost";
-        $db_user = "23217110";
-        $db_password = "23217110";
-        $database = "db_23217110";
+        $db_host = "127.0.0.1";
+        $db_user = "root";
+        $db_password = "";
+        $database = "forum_website";
 
         //error_reporting(0); // so if new mysqli(...) fails, an error won't be echoed to the client
 
