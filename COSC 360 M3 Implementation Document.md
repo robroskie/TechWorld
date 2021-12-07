@@ -4,6 +4,9 @@
 - Luke Roblesky
 - Jacob Harding
 
+## Deployed Site:
+[http://cosc360.ok.ubc.ca/jake10/the-project-luke-and-jacob-cosc-360/src/server/index.php](http://cosc360.ok.ubc.ca/jake10/the-project-luke-and-jacob-cosc-360/src/server/index.php)
+
 ## Implemented Features:
 - The signup.php file uses the signup.js file to do client side form validation, to make sure the data the user is using to register is valid before sending it to the server. In particular it checks to make sure that all the form inputs have been filled, except for the user image which is optional, and that the format of the inputs is correct. The client side validation is done mainly using the javascript function avaiable for string variables 'search' which can match the inputs with a regular expression. If the data passes the client side validation the form is allowed to submit the data (preventDefault() is not called) to the authenticateSignup.php file on the server which then connects to the database and adds the new user's data to the database.
 - login.php makes an AJAX request to authentication.php when the login button is pressed. authentication.php connects to the database and checks that the username and password match a user and if so, sets the session variable 'user_logged_in' so that the rest of the pages the user visits while on the site, which detect the 'user_logged_in' session variable, reflect that they are logged in.
