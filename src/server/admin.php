@@ -118,6 +118,7 @@
                     </div>
               </div> -->
 
+              <!---
                 <div class="user_search_result_container">
                     <div class="user_info_container">
                         <p>Username: <span id="username">Chris</span></p>
@@ -138,6 +139,7 @@
                         </div>
                     </div>
                 </div>
+                -->
 
                 <!-- <div class="user_search_result_container"> 
                     <div class="user_info_container">

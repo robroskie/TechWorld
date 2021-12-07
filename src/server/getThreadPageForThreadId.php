@@ -5,8 +5,8 @@ function getThreadPageNumber($forThreadId, $connection) { // TODO add sort by pa
         echo '{"status": "Failed to make connection to database"}';
         return;
     }
-
-    $sql = "SELECT * FROM (SELECT id, date, threadTitle, threadQuestion, ROW_NUMBER() OVER () thread_result_number FROM Threads) threadsTableWithRowNumbers WHERE id = ?";
+    // $sql = "SELECT * FROM (SELECT id, date, threadTitle, threadQuestion, ROW_NUMBER() OVER () thread_result_number FROM Threads) threadsTableWithRowNumbers WHERE id = ?";
+    $sql = "SELECT * FROM (SELECT id, date, threadTitle, threadQuestion FROM Threads) threadsTableWithRowNumbers WHERE id = ?";
     // Create a prepared statement using the query and the username, execute the statement, and retrieve the results.
     $prepared_statement = $connection->stmt_init();
     $prepared_statement_result = $prepared_statement->prepare($sql);
