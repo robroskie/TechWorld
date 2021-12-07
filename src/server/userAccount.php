@@ -38,6 +38,30 @@
         return $number_of_threads;
     }
 
+    
+    // Updated
+    function getAdminStatus($username){
+        $connection = createDBConnection();
+
+        $SQL = "SELECT * FROM websiteusers WHERE username = ?";
+        $stmt = $connection->prepare($SQL); 
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $to_return = '';
+        while ($row = $result->fetch_assoc()) {
+            $to_return = $row['admin'];
+        }
+        return $to_return;
+    }
+    
+   $admin_display = 'display: none;';
+   $admin_status = getAdminStatus($_SESSION['user_logged_in']); 
+
+    if($admin_status == 1){
+        $admin_display = 'display: flex; margin-top: 1em;';
+    }
+    // Updated
 ?>
 
 <!DOCTYPE html>
