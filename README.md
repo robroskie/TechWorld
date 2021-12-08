@@ -130,7 +130,11 @@ This project should demonstrate your knowledge in full stack web design and prog
    * A 2-3 page detailed description of your implementation from a system or developer's perspective including: What features did you implement? Include a description of the PHP and JavaScript files of your web site. How does your web site work at a high-level? Identify known limitations of the site? 
  * 10 marks is reserved for deployment, version control, client and server side unit testing (if you do not test or deploy the maximum you can get out of this section is 60/70).  It is expected the team members will all contribute to the project (ie everyone is committing to the repo with work) AND that commits/efforts on the project will take place over the next several months.   Additionally, you (the team) will need to think about and investigate how to test different aspects of your site. 
 
+
 **References:**
 
-Note that random questions, comments and usernames were adapted from www.reddit.com and www.redflagdeals.com in our to populate the data on our website.
+* Note that random questions, comments and usernames were adapted from www.reddit.com and www.redflagdeals.com in our to populate the data on our website.
 
+**Other:**
+* Link to the original repo where most of our work was done: 
+* https://github.com/jacobharding/COSC-360-Project
