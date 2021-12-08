@@ -10,7 +10,7 @@
 <hr style="border:2px solid gray"> </hr>
 
 ### User login credentials
--Normal User - **username**: Firestone, **password**: 123</p>
+-Normal User - **username**: Firestone1, **password**: 123</p>
 -Admin - **username**: admin1, **password**: admin1</p>
 
 <hr style="border:2px solid gray"> </hr>
