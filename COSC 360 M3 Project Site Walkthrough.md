@@ -2,14 +2,16 @@
 ## Project Site Walkthrough
 
 <hr style="border:2px solid gray"> </hr>
+
 #### User login credentials
-<p>Normal User - username: Firestone, password: 123</p>
-<p>Admin - username: admin1, password: admin1</p>
+-Normal User - **username**: Firestone, **password**: 123</p>
+-Admin - **username**: admin1, **password**: admin1</p>
+
 <hr style="border:2px solid gray"> </hr>
 
-###  Upon first loading the website the user will be taken to the index.php page. The idea behind our website is that it is a forum where users can ask and answer questions about topics relating to technology.
+<p>Upon first loading the website the user will be taken to the index.php page. The idea behind our website is that it is a forum where users can ask and answer questions about topics relating to technology.</p>
 
-## index.php page
+## Home page (index.php)
 
 <p>At the top and bottom of the document respectively there is a Bootstrap header and footer. The left side of the header contains a Home button, which takes the user back to the index.php page, and an All Topics dropdown button to filter the threads by a selected topic. If the website user is logged in, the right side of the header will display a create a thread, user avatar, user name and logout buttons. However if the user is not logged in, the right side of the header presents login and signup buttons.</p>
 
@@ -29,7 +31,7 @@ https://user-images.githubusercontent.com/28748883/144937649-26517704-a0a0-4283-
 
 <hr style="border:2px solid gray"> </hr>
 
-## login.php page
+## Login page (login.php)
 
 <p>Clicking 'Login' from the main page redirects to a login form, which can be used by both users and admin. A user or admin can easily logout by clicking the 'Logout' button at the top of the page</p>
 
@@ -37,7 +39,7 @@ https://user-images.githubusercontent.com/28748883/144937649-26517704-a0a0-4283-
 
 <hr style="border:2px solid gray"> </hr>
 
-## userAccount.php page
+## User Account page (userAccount.php)
 
 <p>Clicking the username or avatar at the top right of the header, will bring you to the user account page. Here a user can
 view their account avatar, username, email address and the collective number of threads and comments that they have contributed
@@ -48,6 +50,22 @@ and email address. If satisified with the newly entered details, they can be con
 
 <hr style="border:2px solid gray"> </hr>
 
-## changePassword.php page
+## Change Password page (changePassword.php)
 
 <p>Clicking the 'Change Password' button on the user account page redirects to the change password page. Here the logged in user can update their password by filling in the appropriate fields and clicking 'Submit.'</p>
+
+<hr style="border:2px solid gray"> </hr>
+
+## Admin page (admin.php) 
+
+<p>On the user account page, if it is an administrator that is logged in, an additional button will appear called 'Admin Manage' and clicking this will take the admin to admin management page. </p>
+
+<p>From here, the admin can choose to search for threads by the username of the poster, email of the poster or thread title. After entering the desired search value and hitting enter or clicking the magnifying glass, the results are displayed below. Here we see the </p>
+
+<p>The admin can then toggle the displayed user's posting privileges on or off or click the 'Manage User Posts' to be taken to adminManageUser.php</p>
+
+<hr style="border:2px solid gray"> </hr>
+
+## Admin Manage User page (adminManageUser.php)
+
+<p>On this page we see the details at the top of the page of the user account that the admin is currently monitoring. The box just right of this allows the admin to toggle between displaying the threads and comments that the selected user has posted. For each of the threads displayed, the admin can navigate to the thread, toggle between showing and hiding the thread on the website, or delete the thread permanently.</p>
